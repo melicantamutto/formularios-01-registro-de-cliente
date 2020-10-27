@@ -8,30 +8,36 @@
 <body>
     <main>
         <form action="#">
-            <div class="form-input-card">
-                <label for="userName">Nombre</label>
-                <input type="text" name="userName" id="userName" placeholder="Melina" />
-            </div>
-            <div class="form-input-card">
-                <label for="userLastName">Apellido</label>
-                <input type="text" name="userLastName" id="userLastName" placeholder="Cantamutto" />
-            </div>
-            <div class="form-input-card">
-                <label for="userDoc">D.N.I.</label>
-                <input type="number" name="userDoc" id="userDoc" maxlength="8" placeholder="40519990" />
-            </div>
-            <div class="form-input-card">
-                <label for="userEmail">Email</label>
-                <input type="email" name="userEmail" id="userEmail" placeholder="melicantamutto@gmail.com" />
-            </div>
-            <div class="form-input-card">
-                <label for="userPassword">Contraseña</label>
-                <input type="password" name="userPassword" id="userPassword" placeholder="Escribe aqui tu contraseña" minlength="8" maxlength="16" />
-            </div>
-            <div class="form-input-card">
-                <label for="termsAndConditions">Acepto los Términos y Condiciones</label>
-                <input type="checkbox" name="termsAndConditions" id="termsAndConditions" />
-            </div>
+            <fieldset>
+                <legend>Registro de cliente</legend>
+                <ul>
+                    <li class="form-input-card">
+                        <label for="userName">Nombre</label>
+                        <input type="text" name="userName" id="userName" placeholder="Melina" />
+                    </li>
+                    <li class="form-input-card">
+                        <label for="userLastName">Apellido</label>
+                        <input type="text" name="userLastName" id="userLastName" placeholder="Cantamutto" />
+                    </li>
+                    <li class="form-input-card">
+                        <label for="userDoc">D.N.I.</label>
+                        <input type="tel" name="userDoc" id="userDoc" maxlength="8" placeholder="40519990" />
+                    </li>
+                    <li class="form-input-card">
+                        <label for="userEmail">Email</label>
+                        <input type="email" name="userEmail" id="userEmail" placeholder="melicantamutto@gmail.com" />
+                    </li>
+                    <li class="form-input-card">
+                        <label for="userPassword">Contraseña</label>
+                        <input type="password" name="userPassword" id="userPassword" placeholder="Escribe aqui tu contraseña" minlength="8" maxlength="16" />
+                    </li>
+                    <li class="form-input-card">
+                        <label for="termsAndConditions">Acepto los Términos y Condiciones</label>
+                        <input type="checkbox" name="termsAndConditions" id="termsAndConditions" />
+                    </li>
+                </ul>
+            </fieldset>
+            
         <button type="submit">Registrarse</button>
         </form>
     </main>
