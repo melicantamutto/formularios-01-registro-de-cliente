@@ -3,42 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
     <title>Registro de cliente</title>
 </head>
 <body>
-    <main>
+    <main class="form-container">
         <form action="#">
             <fieldset>
-                <legend>Registro de cliente</legend>
+                <legend>Formulario de registro</legend>
                 <ul>
-                    <li class="form-input-card">
+                    <li class="form-input-card half-form">
                         <label for="userName">Nombre</label>
-                        <input type="text" name="userName" id="userName" placeholder="Melina" />
+                        <input type="text" name="userName" id="userName" />
                     </li>
-                    <li class="form-input-card">
+                    <li class="form-input-card half-form">
                         <label for="userLastName">Apellido</label>
-                        <input type="text" name="userLastName" id="userLastName" placeholder="Cantamutto" />
+                        <input type="text" name="userLastName" id="userLastName"  />
                     </li>
-                    <li class="form-input-card">
-                        <label for="userDoc">D.N.I.</label>
-                        <input type="tel" name="userDoc" id="userDoc" maxlength="8" placeholder="40519990" />
+                    <li class="form-input-card  form-shrink">
+                        <label for="userDoc">DNI</label>
+                        <input type="tel" name="userDoc" id="userDoc" maxlength="8"  />
                     </li>
-                    <li class="form-input-card">
+                    <li class="form-input-card form-grow">
                         <label for="userEmail">Email</label>
-                        <input type="email" name="userEmail" id="userEmail" placeholder="melicantamutto@gmail.com" />
+                        <input type="email" name="userEmail" id="userEmail"  />
                     </li>
-                    <li class="form-input-card">
+                    <li class="form-input-card half-form">
                         <label for="userPassword">Contraseña</label>
-                        <input type="password" name="userPassword" id="userPassword" placeholder="Escribe aqui tu contraseña" minlength="8" maxlength="16" />
+                        <input type="password" name="userPassword" id="userPassword" minlength="8" maxlength="16" />
                     </li>
-                    <li class="form-input-card">
-                        <label for="termsAndConditions">Acepto los Términos y Condiciones</label>
-                        <input type="checkbox" name="termsAndConditions" id="termsAndConditions" />
+                    <li class="form-input-card half-form">
+                        <label for="userPassword">Repetir contraseña</label>
+                        <input type="password" name="userPassword" id="userPassword" minlength="8" maxlength="16" />
                     </li>
+                    <small>* La contraseña debe tener entre 8 y 16 carácteres</small>
                 </ul>
+                <div class="form-footer">
+                    <p class="form-input-card">
+                        <label for="termsAndConditions">Aceptar los términos y condiciones</label>
+                        <input type="checkbox" name="termsAndConditions" id="termsAndConditions" />
+                    </p>
+                    <button type="submit">Registrarse</button>
+                </div>
             </fieldset>
-            
-        <button type="submit">Registrarse</button>
         </form>
     </main>
 </body>
